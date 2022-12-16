@@ -1,11 +1,12 @@
-name: 'Your name here'
-description: 'Provide a description here'
-author: 'Your name or organization here'
+name: Release modified components
+description: Compares with the previous release to identify the modified components
+author: Vimal Siva
+
 inputs:
-  milliseconds: # change this
+  components-json:
+    type: string
+    description: Provide the components metadata (i.e path-pattern, workflow to trigger, etc.. )
     required: true
-    description: 'input description here'
-    default: 'default value if applicable'
 runs:
   using: 'node16'
   main: 'dist/index.js'
