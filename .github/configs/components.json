@@ -1,0 +1,9 @@
+{
+    "test": {
+        "pathPattern": [
+            "dist/**"
+        ],
+        "waitForDeployCompletion": true,
+        "workflowName": "sample-run.yml"
+    }
+}
